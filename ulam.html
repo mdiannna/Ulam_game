@@ -1,0 +1,69 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css"  media="all" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Latest compiled and minified CSS -->
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" media="all" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" media="all" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" media="all" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="index.js"></script>
+
+</head>
+
+<body>
+
+	<div class="container">
+      <h1>Ulam's game with lies </h1>
+    
+     <div class="task-input-container">
+      <h4>Search interval:</h4>
+      <div class="input-wrapper">
+        <input id="inputa">  <input id="inputb">
+	    <button onclick="begin()" class="btn btn-success " id="start_game">Incepe jocul</button>
+
+      </div>
+    </div>
+
+    <div class="row">
+s    	<div id="status" class="col-md-6">
+    	<h4></h4>
+	    </div>
+    </div>
+    
+
+    
+    <br>
+    <br>
+
+
+ <div class="row">
+ 	 <button onclick="question()" class="btn btn-primary " id="question_button" style="display: none;">Intrebare</button>
+ </div>
+
+
+    <br>
+    <br>
+
+ <div class="row">
+   
+    <div id="intrebare" style="display: none;"> Numarul e in intervalul [a, b] ? </div>
+    <div id="DaNu" style="display: none">
+    	<button id="da" class="btn btn-warning" onclick="answerYes()">Yes</button>
+    	<button id="nu" class="btn btn-primary" onclick="answerNo()">No</button>
+    </div>
+ </div>
+
+    <br>
+    <br>
+
+
+<body>
+</html>
